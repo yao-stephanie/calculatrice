@@ -12,15 +12,15 @@
 
 // equation(4,16,1);
 
-function nombrePremier(n){
-    while(n>=0 && n<=100){
-        if(n/n === 1 && n/1 === n){
-            console.log('le nombre est premier')
-        }else{
-            console.log('le nombre est pas premier')
-        }
-        n++
-    }
-}
+// function nombrePremier(n){
+//     while(n>=0 && n<=100){
+//         if(n/n === 1 && n/1 === n){
+//             console.log('le nombre est premier')
+//         }else{
+//             console.log('le nombre est pas premier')
+//         }
+//         n++
+//     }
+// }
 
-nombrePremier(16)
+// nombrePremier(16)
