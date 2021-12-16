@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onkeypress="keyboard(event)">
+    <div class="container">
+        <input type="text" class="nav" value=" " disabled>
+
+        <div class="bloc-case">
+            <div class="case-symb"  onclick = "Display('+')"><div>cos</div></div>
+            <div class="case-symb"  onclick = "Display('-')"><div>sin</div></div>
+            <div class="case-symb case-one"  onclick = "Display('0')"><div>one</div></div>
+            <div class="case-symb case-off"  onclick = "Display('')"><div>off</div></div>
+
+
+            <div class="case-symb"  onclick = "Display('+')"><div>+</div></div>
+            <div class="case-symb"  onclick = "Display('-')"><div>-</div></div>
+            <div class="case-symb"  onclick = "Display('*')"><div>*</div></div>
+            <div class="case-symb"  onclick = "Display('/')"><div>/</div></div>
+            
+            <div class="case-symb"  onclick = "Display('&#x221A;')"><div>&#x221A;</div></div>
+            <div class="case-symb"  onclick = "Display('(')"><div>(</div></div>
+            <div class="case-symb"  onclick = "Display(')')"><div>)</div></div>
+            <div class="case-symb"  onclick = "Display('%')"><div>%</div></div>
+
+            <div class=" case-symb case-number"  onclick ="Display('7')"><div>7</div></div>
+            <div class=" case-symb case-number"  onclick = "Display('8')"><div>8</div></div>
+            <div class=" case-symb case-number"  onclick = "Display('9')"><div>9</div></div>
+            <div class=" case-symb case-number"  onclick = "Display('4')"><div>4</div></div>
+            <div class=" case-symb case-number"  onclick = "Display('5')"><div>5</div></div>
+            <div class=" case-symb case-number"  onclick = "Display('6')"><div>6</div></div>
+            <div class=" case-symb case-number" onclick = "Display('1')"><div>1</div></div>
+            <div class=" case-symb case-number" onclick = "Display('2')"><div>2</div></div>
+            <div class=" case-symb case-number"  onclick = "Display('3')"><div>3</div></div>
+            <div class=" case-symb case-number"  onclick = "Display('0')"><div>0</div></div>
+
+
+            <div class=" case-symb case-number case-point"  onclick = "Display('.')"><div>.</div></div>
+            <div class=" case-symb case-number case-ac" onclick = "reset('AC')"><div>AC</div></div>
+            <div class=" case-symb case-number case-ac" onclick = "suprimer('Sup')"><div>Sup</div></div>
+            <div class=" case-symb case-number case-aqualyte" onclick ="equal('=')"><div>=</div></div>
+        </div>
+    </div>
+
+   <script src="main.js"></script>
+   <script src="equation.js"></script>
+</body>
+</html>
